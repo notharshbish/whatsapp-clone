@@ -1,0 +1,72 @@
+.welcomepage {
+    height : 100vh
+}
+
+.welcomepage_header {
+    height : 65px ; 
+    display : flex  ; 
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: #128c7e;
+    padding : 0 20px ;
+}
+
+.welcomepage_header_logo {
+    cursor: pointer;
+}
+
+.welcomepage_header_other {
+    color : white ; 
+}
+
+.welcomepage_header_other > a {
+    margin : 0 25px ;
+    text-decoration: none ; 
+    color : white ; 
+    cursor : pointer ; 
+}
+
+.wc_body {
+    height : calc(100% - 65px) ; 
+    /* height : 100% ;  */
+    display : flex ; 
+    flex-direction: row ;
+}
+
+.wc_body_describe {
+    justify-content: center;
+    display : flex ;
+    align-items: center; 
+    flex-direction: column ;
+}
+
+.wc_body_describe > span {
+    width : 45% ; 
+
+}
+
+.wc_body_describe_title {
+    font-weight : 600 ; 
+    font-size : 34px ; 
+}
+
+.wc_body_describe_text {
+    margin-top:  40px ;
+    font-size: 20px ;
+}
+
+.wc_body_image {
+    height : 100% ; 
+    width : 70% ; 
+    order : 2 ;
+    display : flex ; 
+    flex-direction: column ;
+    justify-content: center; 
+}
+
+.wc_body_image > img {
+    object-fit: contain ;
+    height : 90% ; 
+    width : 100% ; 
+}

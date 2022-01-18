@@ -1,0 +1,106 @@
+.profilesection {
+  background-color: #ededed;
+  width: 40%;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1270px) {
+  div.profilesection {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 62%;
+    height: 100%;
+  }
+}
+
+.open {
+  transform: scaleX(1);
+  transition: all 1000ms;
+  transform-origin: right;
+}
+
+.close {
+  display: none;
+  transition: all 1000ms;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.profilesection_header {
+  padding: 20px 30px;
+  display: flex;
+  background-color: #ededed;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profilesection_header_cross > button {
+  padding: 0;
+  margin-right: 20px;
+}
+
+.profilesection_user {
+  padding: 20px 40px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilesection_user_profile {
+  width: 200px;
+  cursor: pointer;
+  height: 200px;
+}
+
+.profilesection_user_text {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilesection_user_text_title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.profilesection_user_text_number {
+  color: #a4a4a4;
+  margin-top: 5px;
+}
+
+.profilesection_user_profile > img {
+  height: 100%;
+  border-radius: 50%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.profilesection_about {
+  background-color: white;
+  margin: 20px 0 0 0;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilesection_about_title {
+  color: #878787;
+}
+
+.profilesection_about_text {
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.profilesection_users_user {
+  cursor: pointer;
+}
+
+.profilesection_users_user:hover{
+  background-color: lightgrey ;
+}

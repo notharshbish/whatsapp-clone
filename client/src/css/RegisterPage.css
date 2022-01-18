@@ -1,0 +1,123 @@
+.registerpg {
+    height : 100vh ; 
+}    
+
+.rpg_header {
+    height : 65px; 
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    background-color: #128c7e ;
+    padding : 0 20px ;
+}    
+
+.rpg_register_container {
+    padding : 20px ; 
+    width : 50%; 
+    /* padding : 40px 20px 20px 20px ;  */
+    border-radius: 10px ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center; 
+    min-width: 600px ;
+    background-color : lightgrey ;
+}
+
+
+.rpg_header_logo {
+    cursor : pointer ;  
+}    
+
+.rpg_register_container_master { 
+    height : calc(100% - 65px)  ; 
+    display: grid ;
+    place-items: center ; 
+}    
+
+.rpg_register_container_logo {
+    /* background-color: black ; */
+    min-width : 100px ;
+    position: relative;
+    width : 100px ; 
+    border-radius: 50% ;
+    background-color: white;
+    height : 100px ;  
+    min-height : 100px ; 
+    display: flex ;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center ;
+}    
+
+.rpg_register_container_logo > input {
+    position: absolute ;
+    left : 20px ;
+    top : 40px ;
+    opacity: 0;
+    cursor: pointer;  
+}
+
+.rpg_register_container_logo > span {
+    padding : 16px 0 ; 
+}    
+
+.rpg_register_container_logo > img {
+    border-radius: 50% ;
+    cursor: pointer;
+    width : 100% ; 
+    height : 100% ; 
+    object-fit: contain;
+}    
+
+.rpg_register_container_form {
+    display: grid ;
+    width : 100% ; 
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+}
+
+.rpg_register_container_form > div {
+    display: flex; 
+    padding : 17px; 
+    flex-direction: column ;
+}
+
+.rpg_register_container_form > div :first-child {
+    font-size: 15.6px ;
+    margin : 4px 0  ; 
+}
+
+.register_form_error {
+    font-size: 12.6px ;
+    margin : 5px 0 ; 
+    color : red ; 
+}
+
+.rpg_register_container_form > div > input {
+    padding : 9px ;
+    outline: none ;
+    border: none ;
+    border-radius: 7px ; 
+}
+
+.rpg_register_container_btn {
+    width: 100% ;
+    display: flex ;
+    padding : 5px 0 ; 
+    flex-direction: row ;
+    justify-content: center ;
+}
+
+.rpg_register_container_btn--center {
+    background-color: #128c7e; 
+    padding : 10px 20px ;
+    display: flex ;
+    justify-content: center;
+    color : white ; 
+    font-weight: 600 ;
+    border-radius: 10px ; 
+    width: 50% ;
+    cursor: pointer;
+    height : 100% ; 
+}
+
